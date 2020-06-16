@@ -10,7 +10,7 @@ PADD (formerly Chronometer2) is a more expansive version of the original chronom
 - Get a copy of PADD by running:
 ```bash
 cd ~
-wget -N https://raw.githubusercontent.com/jpmck/PADD/master/padd.sh
+wget -N https://raw.githubusercontent.com/lichsimo/PADD/master/padd.sh
 ```
 - Make PADD executable by running
 ```bash
@@ -27,10 +27,6 @@ if [ "$TERM" == "linux" ] ; then
     sleep 1
   done
 fi
-```
-One line version
-```bash
-cd ~ ; echo "if [ \"\$TERM\" == \"linux\" ] ; then\n  while :\n  do\n    ./padd.sh\n    sleep 1\n  done\nfi" | tee ~/.bashrc -a
 ```
 - Reboot your Pi-Hole by running `sudo reboot`. PADD should now run when your Pi-Hole has completed booting.
 
